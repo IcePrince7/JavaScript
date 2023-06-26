@@ -1,0 +1,247 @@
+<body>
+
+    <h1>GoodEve+</h1>
+    <form action="">
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Sign in with your username and password</p>
+        </div>
+        <div class="mainContainer">
+            <!-- For Username -->
+            <label for="username">Your username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br><br>
+            <!--For Password -->
+            <label for="pswrd">Your password : </label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required><br><br>
+            <div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+            <!-- Sign up link -->
+            <p class="register">Not a member? <a href="#">Register here!</a></p>
+        </div>
+
+    </form>
+</body> 
+<!-- STRING Interpolation -->
+<!-- 
+<h3>String Interpolation</h3>
+<div>By using string interpolation, we can able to get a property from a parent file and parent method too</div>
+<li>name : {{ name }}</li>
+<li>method : {{ getbyMethod() }}</li> -->
+
+<!-- property bindind -->
+<!-- <h3>Property binding</h3>
+<div>By using Property binding We can able to bind property of a html element to the property or method of a component class.</div>
+<img #imgtemplate [src]="url"  [hidden]="state" width="300">
+<button  (click)="changeState()">{{ state ? "Wanna see me!" : "No Thanks!"}}</button>
+<br><br>
+<input #temp [attr.value]="valuee">
+<button (click)="Transfer([temp.value])">InputdataTransfer</button> -->
+
+<!-- To way binding.  -->
+<!-- <h3>Two way binding</h3>
+<input #colordata   style="background-color: {{colordata.value}}" [(ngModel)]="colordata.value"/>  -->
+
+
+<!-- services -->
+<!-- <h3>In component 1 value : {{localData.data}}</h3>
+<button (click)="change()">Increment</button>
+<abc-second-com></abc-second-com> -->
+
+<!-- services -->
+<!-- <h3> Getting Student Datas :Service </h3>
+<div *ngIf="studRec; else followBy">Student data on component one :
+   <table border="2">
+      <th>ID</th>
+      <th>FirstName</th>
+      <th>lastname</th>
+      <th>Branch</th>
+      <th>DOB</th>
+      <th>Gender</th>
+      <tr  *ngFor="let iteration of studRec,first as f,index as i">
+         <td >{{ f }}</td>
+         <td>{{ iteration.FirstName}}</td>
+         <td>{{ iteration.LastName}}</td>
+         <td>{{ iteration.Branch}}</td>
+         <td>{{ iteration.DOB}}</td>
+         <td>{{ iteration.Gender}}</td>
+      <tr>
+   </table>
+ <input #search placeholder="Find" required><input #replace placeholder="replace with"/> 
+<button (click)="searchAndReplace([search.value],[replace.value])">Replace</button> -->
+<!-- <button (click)=popp()>Delete the last element</button>
+</div> -->
+<!-- <ng-template #followBy>  
+ Problem with array names
+</ng-template>  --> 
+<!-- <abc-second-com></abc-second-com>  -->
+
+<!-- <abc-second-com [inputval]="parentval" (goingtoParent)="onGoingTransfer($event)"></abc-second-com>
+ <h3>Value received from child component : {{childval}}</h3> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <abc-second-component></abc-second-component> -->
+<!-- <input [(ngModel)]="cname" />
+<h3>{{cname}}</h3> -->
+<!-- <abc-mod1-com1></abc-mod1-com1> -->
+<!-- <abc-mod2-com1></abc-mod2-com1> -->
+
+<!-- <h3>Welcome to jason viewer</h3> -->
+<!-- <div>The link you were trying to get is : {{url}}</div> -->
+
+<!-- <button (click)="lookforJASON()">Click this button to view</button> -->
+<!-- <div>Entire jSon = {{jason}}</div>
+<div *ngIf="jason"> 
+   {{jason}} 
+
+</div> -->
+<!-- 
+<h3>In component 1 value : {{localData.data}}</h3>
+<h3>In component level value : {{localData.data}}</h3>
+<button (click)="change()">Increment</button>
+<abc-second-com></abc-second-com>
+<br><br>
+<div>
+ 
+<input #colordata type="text" style="background-color: {{colordata.value}}" [(ngModel)]="colordata.value"/>
+</div> -->
+
+<!-- <div *ngIf="names; else followBy"> 
+<ul><h2>Nor for and ngif</h2>
+   <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+</div>
+<button (click) ="Change()">Change</button>
+<ng-template #followBy> -->
+<!-- Problem with array names
+</ng-template> -->
+
+<!-- <table>
+   <tr *ngFor="let user of listUsers">
+     <td>{{user.name}}</td>
+     <td>{{user.lastname}}</td>
+   </tr>
+ </table> -->
+
+<!-- {{jason |json }} -->
+
+<!-- <button (click)="JsonCa">Json</button> -->
+
+<!-- {{mycolor}}
+<input [(ngModel)] = "mycolor"> -->
+<!-- <button type = "submit">GetJason</button> -->
+<!-- 
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { students } from './SecService/service2';
+import { DataSupplier } from './Services/my-ser.service.service';
+
+
+@Component({
+  selector: 'abc-fire',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+   providers:[DataSupplier]
+})
+export class AppComponent {
+
+    // String interpolation  
+    // name = "Angular (property from local component)"
+    // getbyMethod () {return 'From a method of parent component'}
+
+
+    // proberty binding  
+    // url = "../assets/funny1.jpg"
+    // state = true
+    // changeState(){
+    //     this.state = !this.state
+    // }
+    // Transfer(val:any){
+    //     console.log(val); 
+    // }
+    // valuee = "I m in ts"
+       
+    // services
+    // constructor(public localData: DataSupplier) { }
+    // change() {
+    //   this.localData.data++
+    // }
+
+    // studRec : any[]
+    // constructor(public studData : students ) { 
+    //   this.studRec = this.studData.getStudents()
+    // } 
+    // popp(){
+    //   this.studRec.pop()
+    // }
+    // searchAndReplace(findd :any,replacee :any){
+    //   console.log(findd,replacee);
+    //    this.studRec.includes(findd)
+    // }
+
+    parentval = "I'm originate from Component one"
+ childval:any
+    onGoingTransfer(event :any){
+       console.log(event);
+       this.childval = event
+    }
+
+
+ 
+
+
+}
+
+  // constructor(public localData: DataSupplier) { }
+  // change() {
+  //   this.localData.data++
+  // }
+
+  // names: string[] = ['Alexa', 'Bixie', 'Chan'];
+
+  // Change(){
+  //   [this.names[1],this.names[0]] = [this.names[0],this.names[1]]
+  // }
+  // jsonResponse =  {"0": { name: "Name0", lastname: "Lastname0" }, "1": { name: "Name1", lastname: "Lastname1" }, "2": { name: "Name2", lastname: "Lastname2" }}
+  // listUsers = []
+  // constructor() {
+  //   for(const prop in this.jsonResponse) {
+  //     this.listUsers.push(this.jsonResponse[prop])
+  //   }
+  // }
+
+ // jasoncall(){
+  // url = `https://dummy.restapiexample.com/api/v1/employee/1`
+  // ress :any=fetch(this.url).then(r=> r.json()).then(r => r).catch(e => e.name)
+  // console.log(this.ress);}
+  
+  // jason =  {"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+  // JSON.stringify(jason)
+//  lookforJASON(){
+//    console.log("hi");}
+  // data = DataSupplier.data -->

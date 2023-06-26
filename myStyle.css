@@ -1,0 +1,31 @@
+body{
+    /* background-image: linear-gzradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/assets/M.jpg);
+    image-orientation: ;
+} */
+
+
+  li{
+    content-visibility: auto;
+    display: inline-block;
+    margin: 0 20px;
+    color:aqua;
+}
+  li:hover{
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    color:blueviolet
+} 
+img{
+  
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 100px;
+    
+
+    
+}
+#Login{
+    margin-left: 150px;
+    color: red;
+}

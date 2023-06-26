@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "Username": "Dev",
+        "books" :"Night shadows",
+        "Startdate" : "31-dec-2022",
+        "duedate": "10-jan-2023"
+    },
+    {
+        "id" : 2,
+        "Username": "Alex",
+        "books" :"Solders from Heaven",
+        "Startdate" : "25-dec-2022",
+        "duedate": "04-jan-2023"
+    },
+    {
+        "id" : 3,
+        "Username": "Simen",
+        "books" :"Dream Vs Passion",
+        "Startdate" : "27-dec-2022",
+        "duedate": "07-jan-2023"
+    },
+    {
+        "id" : 4,
+        "Username": "Samuvel",
+        "books" :"Gift for Sin",
+        "Startdate" : "22-dec-2022",
+        "duedate": "02-jan-2023"
+    },
+    { 
+        "id" : 5,
+        "Username": "Joseph",
+        "books" :"Tears of Friends ",
+        "Startdate" : "3-dec-2022",
+        "duedate": "14-dec-2023"
+    },
+    {
+        "id" : 6,
+        "Username": "kevin",
+        "books" :"World of nuclear",
+        "Startdate" : "23-dec-2022",
+        "duedate": "03-jan-2023"
+    }
+]
